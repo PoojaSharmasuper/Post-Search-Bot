@@ -8,10 +8,10 @@ async def start(bot, message):
     await add_user(message.from_user.id, message.from_user.first_name)
     await message.reply(text=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ •', url=f'https://t.me/codeflixsupport')
-            ],[InlineKeyboardButton("ʜᴇʟᴘ", url="http://telegram.me/CodeXSupport"),
+                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ •', url=f'https://t.me/MdiskGroup')
+            ],[InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/MdiskGroup"),
 
-InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_help")],[InlineKeyboardButton('• ᴏᴜʀ  ᴜᴘᴅᴀᴛᴇꜱ  ᴄʜᴀɴɴᴇʟ •', url=f'http://telegram.me/codeflix_bots')]]))  
+InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_help")],[InlineKeyboardButton('• ᴏᴜʀ  ᴜᴘᴅᴀᴛᴇꜱ  ᴄʜᴀɴɴᴇʟ •', url=f'https://t.me/super4crazy')]]))  
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
     await message.reply(text=script.HELP,
@@ -48,14 +48,14 @@ async def misc(bot, update):
     if data=="home":
        await update.message.edit(text=script.START.format(update.from_user.mention),
                                  disable_web_page_preview=True,
-                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ •', url=f'https://telegram.me/codeflixsupport')
+                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ •', url=f'https://t.me/MdiskGroup')
             ],[InlineKeyboardButton("ʜᴇʟᴘ", url="http://telegram.me/CodeXSupport"),
 
-InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_help")],[InlineKeyboardButton('• ᴏᴜʀ  ᴜᴘᴅᴀᴛᴇꜱ  ᴄʜᴀɴɴᴇʟ •', url=f'http://telegram.me/codeflix_bots')]])) 
+InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_help")],[InlineKeyboardButton('• ᴏᴜʀ  ᴜᴘᴅᴀᴛᴇꜱ  ᴄʜᴀɴɴᴇʟ •', url=f'https://t.me/super4crazy')]])) 
     elif data=="help":
        await update.message.edit(text=script.HELP, 
                                  disable_web_page_preview=True,
-                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ  ᴛᴏ  ᴏᴡɴᴇʀ',url='https://telegram.me/cosmic_freak')],[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="misc_home"),InlineKeyboardButton("ɴᴇxᴛ", url="t.me/sewxiy")]])) 
+                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ  ᴛᴏ  ᴏᴡɴᴇʀ',url='https://t.me/super4crazy')],[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="misc_home"),InlineKeyboardButton("ɴᴇxᴛ", url="https://t.me/super4crazy786")]])) 
 
 
     elif data=="about":
@@ -71,7 +71,7 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     await message.reply_text(
          text="<b>ʜʏ,\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴏᴠɪᴇs / sᴇʀɪᴇs ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ꜰɪʀsᴛ ʙᴜᴛᴛᴏɴ ᴏʀ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ɪɴ ʙᴏᴛ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ sᴇᴄᴏɴᴅ ʙᴜᴛᴛᴏɴ</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝  ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ ", url=f"https://telegram.me/cosmic_freak")],[InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url=f"https://telegram.me/sewxiy")]]), disable_web_page_preview=True
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝  ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ ", url=f"https://t.me/super4crazy")],[InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url=f"https://t.me/super4crazy786")]]), disable_web_page_preview=True
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
