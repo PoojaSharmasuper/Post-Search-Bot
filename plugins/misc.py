@@ -49,7 +49,7 @@ async def misc(bot, update):
        await update.message.edit(text=script.START.format(update.from_user.mention),
                                  disable_web_page_preview=True,
                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ •', url=f'https://t.me/MdiskGroup')
-            ],[InlineKeyboardButton("ʜᴇʟᴘ", url="http://telegram.me/CodeXSupport"),
+            ],[InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/MdiskGroup"),
 
 InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_help")],[InlineKeyboardButton('• ᴏᴜʀ  ᴜᴘᴅᴀᴛᴇꜱ  ᴄʜᴀɴɴᴇʟ •', url=f'https://t.me/super4crazy')]])) 
     elif data=="help":
